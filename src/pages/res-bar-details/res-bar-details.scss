@@ -1,0 +1,39 @@
+page-res-bar-details {
+ ion-content ion-header{
+   background-color: white;
+   //box-shadow: 0 0 8px 1px #bfb6b6;
+   position: relative;
+   padding-bottom: 0 !important;
+ }
+  .barImg{
+    background: url("../assets/img/backgroundImgs/blurred-hotel-reception_1203-2099.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    //height: 13pc;
+  }
+  .barImg img{
+    max-width: 55%;
+    margin-top: 25px;
+    border: 5px solid #fbfbfb;
+    box-shadow: 0 0 20px 1px #8a8381;
+  }
+  .scroll-content{
+    background-color: white;
+  }
+  hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(206, 201, 202, 0.75), rgba(0, 0, 0, 0));
+  }
+  ion-grid.contactUs ion-icon{
+    font-size:3em;
+  }
+  div.viewMenu button{
+    padding: 0 50px !important;
+    background-color: #d43580 !important;
+  }
+  button{
+    border-radius: 0 !important;
+  }
+}

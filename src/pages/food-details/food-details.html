@@ -1,0 +1,40 @@
+<!--
+  Generated template for the FoodDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Food Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="logo" text-center>
+    <img  src="assets/imgs/BarsLogo/Rhapsody_LogoFB.png" />
+  </div>
+  <div class="heading" text-center>
+    <h1 style="margin-top: 5px">{{getFoodName}}</h1>
+    <h2 margin-vertical style="font-weight: 400;">$7.95</h2>
+  </div>
+  <ion-slides pager>
+        <ion-slide *ngFor="let pic of slideImges">
+      <img src="assets/img/Banner/{{pic}}" />
+    </ion-slide>
+
+  </ion-slides>
+<ion-list margin-top>
+  <ion-list-header style="font-size: 15px;" color="dark">Ingredients</ion-list-header>
+  <ion-item *ngFor="let menu of ingriedients">
+    <ion-thumbnail item-start>
+      <img src="assets/img/foodIngredients/{{menu.img}}"/>
+    </ion-thumbnail>
+    <h2 style=" overflow: hidden;text-overflow: ellipsis; ">{{menu.name}}</h2>
+    <p style="color:brown">10.05%</p>
+  </ion-item>
+</ion-list>
+</ion-content>

@@ -1,0 +1,28 @@
+page-food-details {
+  ion-slides {
+    display: block;
+    width:111%;
+    margin: 0 -15px;
+    height: 35%;
+  }
+  ion-slide{
+    width:100%;
+  }
+  .swiper-slide img {
+    width: 100%;
+    max-width: 100%;
+    height: 10pc;
+    max-height: 100%;
+  }
+  .scroll-content{
+    background-color: white;
+  }
+  div.heading h1{
+    background-color: #035e88;
+    color: white;
+    font-weight: 100;
+  }
+  div.logo img {
+    width: 30%;
+  }
+}

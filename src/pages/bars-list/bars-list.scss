@@ -1,0 +1,20 @@
+page-bars-list {
+.card{
+  width:100%;
+}
+  ion-card button{
+    width: 100%;
+    display: inherit;
+    background-color: transparent;
+  }
+  ion-col h5{
+    color: darkgoldenrod !important;
+  }
+  .card-ios h3{
+    color:brown;
+  }
+   .title-md{
+    display: inline-block;
+  }
+
+}

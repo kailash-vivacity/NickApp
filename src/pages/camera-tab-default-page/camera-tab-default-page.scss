@@ -1,0 +1,47 @@
+page-camera-tab-default-page {
+
+  button{
+    padding: 0;
+    background-color: transparent;
+  }
+  button.activated{
+    background-color: #a52a2a30;
+  }
+
+  ion-grid{
+    margin-top: 15px;
+  }
+  h5{
+    margin-top: 0;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+ #restbar img{
+    border:1px solid black;
+  }
+
+  ion-searchbar{
+    margin-top: 5px;
+  }
+
+  ion-grid#imgGridFirst{
+    padding: 0;
+    background-color: white;
+  }
+
+  ion-grid#imgGridFirst img{
+    width:100%;
+  }
+
+  ion-grid#imgGridFirst h5{
+    font-size: 15px;
+  }
+
+  ion-grid#imgGridFirst ion-row{
+    border-top: 1px solid #d2caca;
+  }
+  ion-grid#imgGridFirst ion-row ion-col{
+    border-left:1px solid #d2caca;
+  }
+}

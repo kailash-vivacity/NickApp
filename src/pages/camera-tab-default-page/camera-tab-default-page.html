@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page2">
+  <img id="logo" src="assets/img/cHHqGEnqQjmtS7QfQV2Q_469d6015-9f07-4775-93fe-7d089138b368.png" />
+  <div style="padding: 5px 10px">
+  <ion-searchbar placeholder="Search Your Food..." (ionInput)="getItems($event)"></ion-searchbar>
+  </div>
+  <ion-grid id="restbar">
+    <ion-row>
+      <ion-col col-6>
+        <button (click)="openRestuarants()" style="width:100%">
+        <img src="assets/img/VICAQcS0Tu2sz2ualK8y_80b52bfd-7f60-4eca-9776-af15b72e47a6.jpg" style="width:100%;height:auto;" />
+        <h5 text-center id="cameraTabDefaultPage-heading1">
+          Restaurants
+        </h5>
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button (click)="openBars()" style="width:100%">
+        <img src="assets/img/PPkbKpy0QaYf8e8krYJj_1a6712af-9f32-44bb-a622-8410c3e1b787.jpg" style="width:100%;height:auto" />
+        <h5 text-center id="cameraTabDefaultPage-heading2">
+          Bars
+        </h5>
+        </button>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  <ion-grid id="imgGridFirst">
+    <ion-row>
+      <ion-col col-6>
+        <img src="assets/img/zBTvsJWMRUyVSGtUmudH_943e7ca7-eaec-4bce-bb5e-c1deaa8bf047.png" style="height:3pc" />
+        <img src="assets/img/bH3bfKdsSl6Yt3YRdgwm_ecf862bd-d681-4792-9e7b-1cb4abef8349.jpg" style="height:5pc " />
+      </ion-col>
+      <ion-col col-6>
+        <img src="assets/img/GlW4MC01RlqXcvIQ6W8p_be0ac157-e666-45dc-8576-25e065a3d2ba.png" style="height:3pc" />
+        <img src="assets/img/oM1lL3d3QCawmN9CtBEe_06923835-5a5f-4cf2-b00e-c4f545f1f058.jpg" style="height:5pc" />
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col col-4>
+      <img src="assets/img/VfB8ArQT5uhkwkEJk0SB_c94196f6-911c-421c-b453-6fa9c90d7d8f.png" style="height:2cm;" />
+      <h5 id="cameraTabDefaultPage-heading3">
+        Breakfast
+      </h5>
+      </ion-col>
+      <ion-col col-4>
+      <img src="assets/img/aQl25sxoQ0ismHOBxlz5_4c4b8816-95a7-4e48-83ee-791354af2b94.jpg" style="height:2cm;" />
+      <h5 id="cameraTabDefaultPage-heading4">
+        Lunch
+      </h5>
+      </ion-col>
+      <ion-col col-4>
+      <img src="assets/img/evn4sSCQmiw8XE3R9oid_a82d8e41-21f3-4088-b73e-d4af996b2a9d.jpg" style="height:2cm;" />
+      <h5 id="cameraTabDefaultPage-heading5">
+        Dinner
+      </h5>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,93 @@
+<!--
+  Generated template for the ResBarDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title *ngIf="navParams.data.type=='bar'">Bar Details</ion-title>
+    <ion-title *ngIf="navParams.data.type=='res'">Restaurent Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+
+  <div class="barImg" text-center>
+    <div *ngIf="navParams.data.type=='bar'"><img src="assets/img/bars/3.jpg"/></div>
+    <div *ngIf="navParams.data.type=='res'"><img src="assets/img/restaurents/1.jpg"/></div>
+    <div *ngIf="navParams.data.type=='bar'"><h4>Bar Name</h4></div>
+    <div *ngIf="navParams.data.type=='res'"><h4>Restaurent Name</h4></div>
+  </div>
+
+    <ion-header padding margin-top>
+      <div float-left>
+        <p no-margin>Hours</p>
+        <p style="margin-top:4px">$50</p>
+      </div>
+      <div float-right>
+        <img src="assets/imgs/3.5-star-rating..png" height="20" width="100"/>
+      </div>
+      <div style="clear: both"></div>
+    </ion-header>
+  <div class="viewMenu" text-center>
+    <button (click)="openMenu()" ion-button color="dark"><ion-icon ios="ios-pizza" md="md-pizza"></ion-icon>&nbsp;&nbsp;View Menu&nbsp;&nbsp;<ion-icon ios="ios-beer" md="md-beer"></ion-icon></button>
+  </div>
+  <hr *ngIf="platform.is('ios')" class="style-two">
+  <div margin-top margin-bottom>
+    <img src="assets/img/backgroundImgs/ArtImgozwPVl_n-min.png" style="width:100%"/>
+  </div>
+  <ion-list margin-top>
+    <ion-list-header color="dark">Public Reviews</ion-list-header>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/peopleProfilePics/6179593-profile-pics.jpg"/>
+      </ion-avatar>
+      <h2>John Doe</h2>
+      <div><img src="assets/imgs/3.5-star-rating..png" style="width: 4em;"/></div>
+      <p>So, who's ready for Ken's dream tour?</p>
+     </ion-item>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/peopleProfilePics/1451456913_brodie.jpg"/>
+      </ion-avatar>
+      <h2>John Doe</h2>
+      <div><img src="assets/imgs/3.5-star-rating..png" style="width: 4em;"/></div>
+      <p>So, who's ready for Ken's dream tour?</p>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/peopleProfilePics/images.jpg"/>
+      </ion-avatar>
+      <h2>John Doe</h2>
+      <div><img src="assets/imgs/3.5-star-rating..png" style="width: 4em;"/></div>
+      <p>So, who's ready for Ken's dream tour?</p>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/peopleProfilePics/profile.jpg"/>
+      </ion-avatar>
+      <h2>John Doe</h2>
+      <div><img src="assets/imgs/3.5-star-rating..png" style="width: 4em;"/></div>
+      <p>So, who's ready for Ken's dream tour?</p>
+    </ion-item>
+    <div text-center margin-top>
+      <button ion-button>View All&nbsp;&nbsp;<ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright"></ion-icon></button>
+    </div>
+  </ion-list>
+
+  <ion-grid class="contactUs" no-padding>
+    <ion-list no-margin>
+    <ion-list-header color="dark">Contact Us</ion-list-header>
+    </ion-list>
+    <div text-center>
+      <ion-icon style="color:royalblue" margin name="logo-facebook"></ion-icon>
+      <ion-icon style="color: #41e1db;" margin name="logo-twitter"></ion-icon>
+      <ion-icon style="color: brown;" margin name="logo-googleplus"></ion-icon>
+    </div>
+  </ion-grid>
+
+</ion-content>
